@@ -1,0 +1,44 @@
+
+[build.environment]
+  NODE_VERSION = "20"
+  PLAYWRIGHT_BROWSERS_PATH = "0"
+
+[build]
+  publish = "dist"
+  command = "pnpm run build"
+
+
+[[redirects]]
+  from = "/2023-10-slidev/src"
+  to = "https://github.com/xinlc/talks/tree/main/2023-10-slidev"
+  status = 302
+
+[[redirects]]
+  from = "2023-10-slidev"
+  to = "https://talks.lichao.xin/2023-10-slidev/"
+  status = 301
+
+[[redirects]]
+  from = "/2023-10-slidev/*"
+  to = "/2023-10-slidev/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/2023-10-vim/src"
+  to = "https://github.com/xinlc/talks/tree/main/2023-10-vim"
+  status = 302
+
+[[redirects]]
+  from = "2023-10-vim"
+  to = "https://talks.lichao.xin/2023-10-vim/"
+  status = 301
+
+[[redirects]]
+  from = "/2023-10-vim/*"
+  to = "/2023-10-vim/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/"
+  to = "https://lichao.xin/talks"
+  status = 302
